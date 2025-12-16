@@ -54,8 +54,8 @@
           <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
           <span>Streak Meter</span>
         </div>
-        <h1 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">Track your momentum, month by month</h1>
-        <p class="mt-2 max-w-2xl text-sm text-zinc-300">A simple streak counter with monthly history, a calendar you can tap, and motivational quotes. Stored locally on your device.</p>
+        <h1 class="mt-3 text-3xl font-semibold tracking-tight md:text-4xl"> MOMENTO</h1>
+        <p class="mt-2 max-w-2xl text-sm text-zinc-300">you can you will</p>
       </div>
 
       <div class="flex flex-col gap-2 md:items-end">
@@ -112,8 +112,6 @@
             <div class="mt-1 text-sm"><span id="monthBest" class="font-semibold">—</span> best run</div>
           </div>
         </div>
-
-        <div class="mt-4 text-xs text-zinc-400">Tip: days are assumed “on track” unless you mark a reset. Marking today ✓ is optional (it helps you visualize the calendar).</div>
       </div>
 
       <!-- Quote card -->
@@ -121,7 +119,6 @@
         <div class="flex items-start justify-between gap-3">
           <div>
             <div class="text-sm text-zinc-300">Motivation</div>
-            <div class="mt-1 text-xs text-zinc-400">Fetched from a quote API (with local fallback).</div>
           </div>
           <button id="refreshQuoteBtn" class="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-xs font-medium text-zinc-100 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-400/25">Refresh</button>
         </div>
@@ -221,7 +218,7 @@
     </section>
 
     <footer class="mt-10 text-xs text-zinc-500">
-      <p><span class="text-zinc-400">Privacy:</span> data is stored only in your browser via localStorage. Quotes are fetched from a public quote API.</p>
+     
     </footer>
   </main>
 
@@ -558,7 +555,7 @@
         const pick = fallbackQuotes[Math.floor(Math.random() * fallbackQuotes.length)];
         data.quoteCache = { date: todayStr, content: pick.content, author: pick.author, source: 'local fallback' };
         saveData();
-        setQuote(pick.content, pick.author, 'Using local fallback');
+        setQuote(pick.content, pick.author, '');
       }
     }
 
